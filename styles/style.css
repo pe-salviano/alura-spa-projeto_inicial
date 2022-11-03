@@ -19,6 +19,7 @@ nav ul a:hover {
   border-bottom: 2px solid #74959A;
 }
 
+
 .banner {
   background: url(../imagens/banner.jpeg) center no-repeat;
   min-height: 350px;
@@ -43,6 +44,11 @@ nav ul a:hover {
   color: #74959A;
 }
 
+@media screen and (max-width: 414px) {
+  .inner-banner {
+    margin: 0 3rem;
+  }
+}
 #servicos {
   margin: 80px;
 }
@@ -65,13 +71,13 @@ nav ul a:hover {
   justify-content: space-between;
 }
 #servicos .cards .card {
-  margin: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
   width: 450px;
   text-align: center;
   border: 1px solid black;
   border-radius: 5px;
 }
-#servicos .cards .card .card-desktop {
+#servicos .cards .card .card-mobile {
   display: none;
 }
 #servicos .cards .card h5 {
@@ -103,13 +109,25 @@ nav ul a:hover {
   #servicos {
     margin-top: 2rem;
   }
-  #servicos .cards-desktop {
+  #servicos .cards-mobile {
     display: block;
   }
   #servicos .card {
     margin: 1.5rem auto;
     padding-bottom: 1rem;
     min-width: 80%;
+  }
+}
+@media screen and (max-width: 414px) {
+  #servicos {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  #servicos h3 {
+    margin-bottom: 2rem;
+  }
+  #servicos .card {
+    max-width: 350px;
+    margin: 0;
   }
 }
 #cupom {
@@ -166,6 +184,18 @@ nav ul a:hover {
   border-color: #495371;
 }
 
+@media screen and (max-width: 414px) {
+  #cupom .input {
+    margin: 0;
+    width: 286px;
+  }
+  #cupom .input input {
+    border-radius: 10px;
+    height: 25px;
+    width: 250px;
+    font-size: 14px;
+  }
+}
 #information {
   display: flex;
   flex-direction: column;
@@ -198,6 +228,11 @@ nav ul a:hover {
   max-width: 400px;
 }
 
+@media screen and (max-width: 414px) {
+  .image-mobile {
+    width: 350px;
+  }
+}
 footer {
   text-align: center;
   font-size: 1.5rem;

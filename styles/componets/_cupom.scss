@@ -54,3 +54,22 @@
 
     }
 }
+
+@media screen and (max-width:414px) {
+    #cupom{
+        .input {
+            margin: 0;
+            width: 286px;
+            
+            input{
+                border-radius: 10px;
+                height: 25px;
+                width: 250px;
+                font-size: 14px;
+            }
+        
+        }
+
+    }
+
+}
