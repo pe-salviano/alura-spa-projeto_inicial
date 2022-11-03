@@ -62,11 +62,17 @@ nav ul a:hover {
 }
 #servicos .cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #servicos .cards .card {
-  width: 360px;
+  margin: 0.5rem;
+  width: 450px;
   text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#servicos .cards .card .card-desktop {
+  display: none;
 }
 #servicos .cards .card h5 {
   font-size: 2rem;
@@ -79,15 +85,33 @@ nav ul a:hover {
   font-weight: 300;
   color: #495371;
   line-height: 1.25rem;
+  margin: 0.5rem;
 }
 #servicos .cards .card .img-container {
   padding-bottom: 2px;
-  border-bottom: 6px solid #74959A;
 }
 #servicos .cards .card .img-container img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 1325px) {
+  #servicos h3 {
+    font-size: 1.3636363636rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #servicos {
+    margin-top: 2rem;
+  }
+  #servicos .cards-desktop {
+    display: block;
+  }
+  #servicos .card {
+    margin: 1.5rem auto;
+    padding-bottom: 1rem;
+    min-width: 80%;
+  }
+}
 #cupom {
   background-color: #F1E0AC;
   padding: 4rem;
@@ -149,7 +173,7 @@ nav ul a:hover {
   align-items: center;
 }
 #information .image-information {
-  min-width: 30%;
+  min-width: auto;
   margin-top: 3rem;
 }
 #information .text-information {
@@ -170,7 +194,8 @@ nav ul a:hover {
   font-weight: 300;
   color: #495371;
   line-height: 1.25rem;
-  margin-bottom: 3rem;
+  margin: 1.2rem auto;
+  max-width: 400px;
 }
 
 footer {

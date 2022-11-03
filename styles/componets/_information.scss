@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     .image-information{
-        min-width: 30%;
+        min-width: auto;
         margin-top: 3rem;
     }
     .text-information{
@@ -27,7 +27,8 @@
         font-weight: 300;
         color: $cor-primaria;
         line-height: 1.25rem;
-        margin-bottom: 3rem;
+        margin: 1.2rem  auto;
+        max-width: 400px;
        }
     }
 
