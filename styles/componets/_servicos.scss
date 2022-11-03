@@ -89,6 +89,14 @@
 
 }
 
+@media screen and (max-width:375px) {
+   #servicos{
+    .card{
+        max-width: 300px;
+        
+    }
+   }
+}
 
 
 
